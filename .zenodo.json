@@ -1,0 +1,26 @@
+{
+  "title": "Sentinel Git-OPS: A DevSecOps Tactical CLI for Standardized and Secure Git Workflows",
+  "version": "2.3.0",
+  "creators": [
+    {
+      "name": "Chavatte, João Carlos"
+    }
+  ],
+  "description": "Sentinel Git-OPS is an interactive DevSecOps command-line interface for standardized Git workflows. It provides branch lifecycle operations, remote management and multi-push, authentication helpers, status and audit utilities, recovery actions, localization, and an optional pre-commit scan for common secret patterns. The project ships separate Bash and PowerShell implementations for Unix-like and Windows environments.",
+  "access_right": "open",
+  "license": "mit",
+  "upload_type": "software",
+  "language": "eng",
+  "keywords": [
+    "DevSecOps",
+    "Git",
+    "Git workflow",
+    "cybersecurity",
+    "secure software development",
+    "command line interface",
+    "secret scanning",
+    "PowerShell",
+    "Bash"
+  ],
+  "notes": "GitHub release snapshot intended for preservation and citation through Zenodo. DOI is assigned by Zenodo when the record is published."
+}

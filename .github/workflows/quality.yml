@@ -1,0 +1,45 @@
+name: Quality
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  bash-and-metadata:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+      - name: Validate Bash syntax
+        shell: bash
+        run: |
+          set -euo pipefail
+          for f in linux/git-ops.sh linux/core/*.sh; do
+            bash -n "$f"
+          done
+      - name: Validate metadata and line endings
+        run: python3 tests/validate_metadata.py
+
+  powershell-parser:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+      - name: Parse PowerShell files
+        shell: pwsh
+        run: |
+          $files = Get-ChildItem -Path . -Recurse -Filter *.ps1
+          foreach ($file in $files) {
+            $tokens = $null
+            $errors = $null
+            [void][System.Management.Automation.Language.Parser]::ParseFile($file.FullName, [ref]$tokens, [ref]$errors)
+            if ($errors.Count -gt 0) {
+              $errors | ForEach-Object { Write-Error "${file}: $($_.Message)" }
+              exit 1
+            }
+          }
+          Write-Host "PowerShell parser validation: OK"

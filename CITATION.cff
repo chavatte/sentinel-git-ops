@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Sentinel Git-OPS: A DevSecOps Tactical CLI for Standardized and Secure Git Workflows"
+type: software
+version: 2.3.0
+license: MIT
+authors:
+  - family-names: "Chavatte"
+    given-names: "João Carlos"
+abstract: "Sentinel Git-OPS is an interactive DevSecOps CLI for standardized Git workflows. It provides branch lifecycle operations, remote management and multi-push, authentication helpers, status and audit utilities, recovery actions, localization, and an optional pre-commit scan for common secret patterns. The project ships separate Bash and PowerShell implementations for Unix-like and Windows environments."
+keywords:
+  - DevSecOps
+  - Git
+  - Git workflow
+  - cybersecurity
+  - secure software development
+  - command line interface
+  - secret scanning
+  - PowerShell
+  - Bash
+repository-code: "https://github.com/chavatte/sentinel-git-ops"
+url: "https://github.com/chavatte/sentinel-git-ops"
