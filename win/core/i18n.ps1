@@ -12,7 +12,7 @@ function Set-Language {
     if ($Lang -eq "pt") {
         $global:Msg = @{
             # --- MENU ---
-            "Menu_Header"    = "                     Chavatte Security | Sentinel Git-OPS v2.3.0                         "
+            "Menu_Header"    = "                     Chavatte Security | Sentinel Git-OPS v2.3.1                         "
             "Dash_Node"      = "  📍 Node Atual : {0}"
             "Dash_Status"    = "  📊 Status     : {0}"
             "Dash_Remote"    = "  🌍 Nuvem      : {0}"
@@ -134,7 +134,7 @@ function Set-Language {
     else {
         $global:Msg = @{
             # --- MENU ---
-            "Menu_Header"    = "                     Chavatte Security | Sentinel Git-OPS v2.3.0                         "
+            "Menu_Header"    = "                     Chavatte Security | Sentinel Git-OPS v2.3.1                         "
             "Dash_Node"      = "  📍 Current Node : {0}"
             "Dash_Status"    = "  📊 Status       : {0}"
             "Dash_Remote"    = "  🌍 Cloud        : {0}"

@@ -24,10 +24,11 @@ _____________|','   ///_/-------------/   |                 \_/_________________
 </pre>
 
 <div align="center">
-  <h1>🛡️ Sentinel Git-OPS (v2.3.0)</h1>
+  <h1>🛡️ Sentinel Git-OPS (v2.3.1)</h1>
   <p><strong>Uma CLI Tática de DevSecOps para Padronização e Segurança de Fluxos Git</strong></p>
 
-  [![PowerShell](https://img.shields.io/badge/PowerShell-%E2%89%A55.1-blue?logo=powershell&style=flat-square)](https://docs.microsoft.com/en-us/powershell/) [![Bash](https://img.shields.io/badge/Bash-Native-4EAA25?logo=gnu-bash&style=flat-square)](https://www.gnu.org/software/bash/) [![Git](https://img.shields.io/badge/Git-Workflow-F05032?logo=git&style=flat-square)](https://git-scm.com/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22904347.svg)](https://doi.org/10.5281/zenodo.22904347) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT) 
+[![PowerShell](https://img.shields.io/badge/PowerShell-%E2%89%A55.1-blue?logo=powershell&style=flat-square)](https://docs.microsoft.com/en-us/powershell/) [![Bash](https://img.shields.io/badge/Bash-Native-4EAA25?logo=gnu-bash&style=flat-square)](https://www.gnu.org/software/bash/) [![Git](https://img.shields.io/badge/Git-Workflow-F05032?logo=git&style=flat-square)](https://git-scm.com/)
 
 <br>
 
@@ -57,7 +58,7 @@ Ao substituir comandos Git repetitivos por uma experiência guiada no terminal, 
 
 ## 🏗️ Arquitetura e Recursos
 
-Construído com base nos princípios de **Clean Code**, a versão **v2.3.0** introduz uma arquitetura altamente modular onde o roteador central é estritamente separado das ações lógicas e dos dicionários dinâmicos de tradução (i18n).
+Construído com base nos princípios de **Clean Code**, a versão **v2.3.1** introduz uma arquitetura altamente modular onde o roteador central é estritamente separado das ações lógicas e dos dicionários dinâmicos de tradução (i18n).
 
 * 📊 **Dashboard Tático:** Telemetria em tempo real exibindo o node atual (branch), status de modificação de arquivos e redes na nuvem conectadas diretamente no cabeçalho do terminal.
 * 🛡️ **Shield Ops (Pre-Commit Hook):** Injeta um script de segurança para auditar ativamente e bloquear commits que contenham segredos expostos (chaves AWS, chaves RSA, tokens do GitHub).
@@ -172,6 +173,16 @@ Se você acidentalmente preparar (stage) uma função quebrada ou precisar retra
 ## 📝 Notas de Segurança
 
 O Sentinel pode alterar o estado do repositório, perfis do shell, remotes e hooks Git. Revise a saída dos comandos antes de usar operações destrutivas ou de reescrita de histórico. O Shield é uma verificação limitada baseada em padrões e não substitui soluções dedicadas de secret scanning.
+
+## 📚 Citação
+
+Caso você utilize o Sentinel Git-OPS em pesquisas, trabalhos acadêmicos, ensino ou estudos de engenharia de software, cite a versão 2.3.1 por meio do DOI:
+
+**DOI:** https://doi.org/10.5281/zenodo.22904347
+
+### Citação recomendada
+
+Chavatte, João Carlos. 2026. *Sentinel Git-OPS: A DevSecOps Tactical CLI for Standardized and Secure Git Workflows*. Versão 2.3.1. Zenodo. https://doi.org/10.5281/zenodo.22904347
 
 ## 🛡️ Política de Segurança
 

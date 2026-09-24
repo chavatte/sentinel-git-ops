@@ -1,5 +1,5 @@
 # ==============================================================================
-# Chavatte Security | Sentinel Git-OPS v2.3.0 (Core Router)
+# Chavatte Security | Sentinel Git-OPS v2.3.1 (Core Router)
 # ==============================================================================
 
 $corePath = Join-Path -Path $PSScriptRoot -ChildPath "core"

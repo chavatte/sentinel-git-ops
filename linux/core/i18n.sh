@@ -17,7 +17,7 @@ get_msg() {
     if [ "$SENTINEL_LANG" == "pt" ]; then
         case "$key" in
             # --- MENU ---
-            "Menu_Header")    echo "                     Chavatte Security | Sentinel Git-OPS v2.3.0                         " ;;
+            "Menu_Header")    echo "                     Chavatte Security | Sentinel Git-OPS v2.3.1                         " ;;
             "Dash_Node")      echo "  📍 Node Atual : $p1" ;;
             "Dash_Status")    echo "  📊 Status     : $p1" ;;
             "Dash_Remote")    echo "  🌍 Nuvem      : $p1" ;;
@@ -139,7 +139,7 @@ get_msg() {
     else
         case "$key" in
             # --- MENU ---
-            "Menu_Header")    echo "                     Chavatte Security | Sentinel Git-OPS v2.3.0                         " ;;
+            "Menu_Header")    echo "                     Chavatte Security | Sentinel Git-OPS v2.3.1                         " ;;
             "Dash_Node")      echo "  📍 Current Node : $p1" ;;
             "Dash_Status")    echo "  📊 Status       : $p1" ;;
             "Dash_Remote")    echo "  🌍 Cloud        : $p1" ;;

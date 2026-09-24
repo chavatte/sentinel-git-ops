@@ -1,6 +1,6 @@
 {
   "title": "Sentinel Git-OPS: A DevSecOps Tactical CLI for Standardized and Secure Git Workflows",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "creators": [
     {
       "name": "Chavatte, João Carlos"

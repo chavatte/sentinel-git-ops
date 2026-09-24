@@ -2,7 +2,8 @@ cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 title: "Sentinel Git-OPS: A DevSecOps Tactical CLI for Standardized and Secure Git Workflows"
 type: software
-version: 2.3.0
+version: 2.3.1
+doi: "10.5281/zenodo.22904347"
 license: MIT
 authors:
   - family-names: "Chavatte"

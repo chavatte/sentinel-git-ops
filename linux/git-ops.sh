@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ==============================================================================
-# Chavatte Security | Sentinel Git-OPS v2.3.0 (Core Router - Bash)
+# Chavatte Security | Sentinel Git-OPS v2.3.1 (Core Router - Bash)
 # ==============================================================================
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"

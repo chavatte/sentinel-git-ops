@@ -25,10 +25,11 @@ _____________|','   ///_/-------------/   |                 \_/_________________
 
 <div align="center">
   <img src="./assets/logo.png" alt="Sentinel Git-OPS" style="margin: 20px;">
-  <h1>🛡️ Sentinel Git-OPS (v2.3.0)</h1>
+  <h1>🛡️ Sentinel Git-OPS (v2.3.1)</h1>
   <p><strong>A DevSecOps Tactical CLI for Standardized & Secure Git Workflows</strong></p>
 
-  [![PowerShell](https://img.shields.io/badge/PowerShell-%E2%89%A55.1-blue?logo=powershell&style=flat-square)](https://docs.microsoft.com/en-us/powershell/) [![Bash](https://img.shields.io/badge/Bash-Native-4EAA25?logo=gnu-bash&style=flat-square)](https://www.gnu.org/software/bash/) [![Git](https://img.shields.io/badge/Git-Workflow-F05032?logo=git&style=flat-square)](https://git-scm.com/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22904347.svg)](https://doi.org/10.5281/zenodo.22904347) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT) 
+[![PowerShell](https://img.shields.io/badge/PowerShell-%E2%89%A55.1-blue?logo=powershell&style=flat-square)](https://docs.microsoft.com/en-us/powershell/) [![Bash](https://img.shields.io/badge/Bash-Native-4EAA25?logo=gnu-bash&style=flat-square)](https://www.gnu.org/software/bash/) [![Git](https://img.shields.io/badge/Git-Workflow-F05032?logo=git&style=flat-square)](https://git-scm.com/)
 
   <br>
 
@@ -58,7 +59,7 @@ By replacing raw, repetitive Git commands with a guided terminal experience, Sen
 
 ## 🏗️ Architecture & Features
 
-Built with **Clean Code** principles, **v2.3.0** introduces a highly modular architecture where the core router is strictly separated from logical actions and dynamic i18n dictionaries.
+Built with **Clean Code** principles, **v2.3.1** introduces a highly modular architecture where the core router is strictly separated from logical actions and dynamic i18n dictionaries.
 
 * 📊 **Tactical Dashboard:** Real-time telemetry displaying the current node (branch), file modification status, and connected cloud networks directly in the terminal header.
 * 🛡️ **Shield Ops (Pre-Commit Hook):** Injects a security script to actively scan and block commits containing exposed secrets (AWS keys, RSA keys, GitHub tokens).
@@ -169,10 +170,19 @@ If you accidentally staged a broken function or need to rework your last commit:
 
 ---
 
-
 ## 📝 Security Notes
 
 Sentinel can modify repository state, shell profiles, remotes, and Git hooks. Review command output before using destructive or history-rewriting options. The Shield feature is a limited pattern-based check and is not a replacement for dedicated secret-scanning systems.
+
+## 📚 Citation
+
+If you use Sentinel Git-OPS in research, education publications, or software engineering studies, please cite version 2.3.1 using the following DOI:
+
+**DOI:** https://doi.org/10.5281/zenodo.22904347
+
+### Recommended citation
+
+Chavatte, João Carlos. 2026. *Sentinel Git-OPS: A DevSecOps Tactical CLI for Standardized and Secure Git Workflows* Version 2.3.1. Zenodo. https://doi.org/10.5281/zenodo.22904347
 
 ## 🛡️ Security Policy
 
@@ -181,3 +191,4 @@ As a project maintained by  **Chavatte Security** , we take the integrity of our
 ## 📝 License & Authorship
 
 This project is distributed under the **MIT** license. See the `LICENSE` file for details.
+

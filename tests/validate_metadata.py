@@ -14,12 +14,12 @@ meta = json.loads((ROOT / ".zenodo.json").read_text(encoding="utf-8"))
 assert meta["upload_type"] == "software"
 assert meta["access_right"] == "open"
 assert meta["license"].lower() == "mit"
-assert meta["version"] == "2.3.0"
+assert meta["version"] == "2.3.1"
 assert meta["creators"][0]["name"] == "Chavatte, João Carlos"
 
 cff = (ROOT / "CITATION.cff").read_text(encoding="utf-8")
 for needle in [
-    "cff-version: 1.2.0", "type: software", "version: 2.3.0",
+    "cff-version: 1.2.0", "type: software", "version: 2.3.1",
     "license: MIT", 'family-names: "Chavatte"', 'given-names: "João Carlos"'
 ]:
     assert needle in cff, f"CITATION.cff missing expected field: {needle}"
